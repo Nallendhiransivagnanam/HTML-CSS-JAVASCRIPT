@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCL from</title>
+    <style>
+        .nallu {
+            width: 700px;
+            height: 100%;
+            padding: 20px;
+            border: 10px solid black;
+            margin: 30px;
+            background-color: rgba(176, 176, 199, 0.514);
+            background-image: url(http://t3.gstatic.com/images?q=tbn:ANd9GcR1_IDUSviQYX0J3rMHBV00RWfWnRxVsogKxqXj-kjfmGbKIeyj);
+            background-repeat: no-repeat;
+         }
+    </style>
+</head>
+<body>
+<div class="nallu">
+    <div><form action="result.html" method="GET" enctype="multipart/form-data">
+        <h1 style="text-align: center;"><strong>HCL APPLICATION</strong> </h1>
+        <label for="frist name">frist name:</label>
+        <span class="mandatory">*</span>
+        <input type="text" name="frist name" id="name123" placeholder="without intials" required>
+    </div>
+    <br>
+    <div><label for="last name">last name:</label>
+        <span class="mandatory">*</span>
+        <input type="text" name="last name" id="name123" required>
+    </div>
+    <br>
+    <div><label for="email">email id:</label>
+        <span class="mandatory">*</span>
+        <input type="email" name="email" id="email" required>
+    </div>
+    <br>
+    <div><label for="mobile">mobile no   :</label>
+        <span class="mandatory">*</span>
+        <input type="tel" name="mobile" id="mobile" required>
+    </div>
+    <br>
+    <div> 
+        <label for="age">Age:</label>
+        <span class="mandatory">*</span>
+        <input type="number"name="age" id="age" min="18" max="30">
+    </div>
+
+    <br>
+
+    <div><label for="dob">DOB:</label>
+        <span class="mandatory">*</span>
+        <input type="date" name="dob" id="dob" required>
+    </div>
+
+    <br>
+
+    <div>
+       <p>Gender:</p> 
+       <input type="radio" id="MALE" name="Gender" value="MALE">
+       <label for="MALE">MALE</label>
+       <input type="radio" id="FEMALE" name="Gender" value="FEMALE">
+       <label for="FEMALE">FEMALE</label>
+       <input type="radio" id="OTHERS" name="Gender" value="OTHERS">
+       <label for="OTHERS">OTHERS</label>
+       <br>
+    </div>
+
+    <br>
+
+    <div>  
+         <label for="degree">Degree:</label>
+         <select name="degree" id="qualification"> 
+            <option value="B.E\B,TECH">B.E\B.TECH</option>
+            <option value="M.E\M.TEC">M.E\M.TEC</option>
+        </select>
+    </div>
+ 
+    <br>
+
+    <div>
+        <label for="branch">Branch:</label> 
+        <select name="branch" id="qualification">
+            <option value="mech">MECH</option>
+            <option value="eee">EEE</option>
+            <option value="ece">ECE</option>
+            <option value="cse">CSE</option>
+    </select>
+    </div>
+    
+    <br>
+    <div>
+        <label for="sslc">SSLC %:</label>
+        <input type="number" name="sslc" id="sslc" min="60" max="100" required>
+    </div>
+    
+    <br>
+
+    <div>
+        <label for="hsc">HSC %:</label>
+        <input type="number" name="hsc" id="hsc" min="60" max="100" required>
+    </div>
+    
+    <br>
+    <div>
+        <label for="ug">UG %:</label>
+        <input type="number" name="ug" id="ug" min="60" max="100" required>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="pg">PG %:</label>
+        <input type="number" name="pg" id="pg" min="60" max="100" >
+    </div>
+    
+    <br>
+
+    <div>
+        <p>skills:</p>
+        <input type="checkbox" id="c" name="c" value="c">
+        <label for="c">c</label><br>
+        <input type="checkbox" id="c++" name="c++" value="c++">
+        <label for="c++">c++</label><br>
+        <input type="checkbox" id="java" name="java" value="java">
+        <label for="java">java</label><br>
+        <input type="checkbox" id="python" name="python" value="python">
+        <label for="python">python</label><br>
+    </div>
+    
+    <br>
+
+    <div>
+        <label for="photo">photo:</label>
+        <span class="mandatory">*</span>
+        <input type="file" name="photo" id="poto" accept="image/*" required>
+    </div>
+    
+    <br>
+
+    <div>
+        <label for="signature">signature:</label>
+        <span class="mandatory">*</span>
+        <input type="file" name="signature" id="signature" accept="image" required>
+    </div>
+    
+    <br>
+
+    <div>
+        <label for="resume">resume:</label>
+        <span class="mandatory">*</span>
+        <input type="file" name="resume" id="resume" accept=".pdf" required>
+    </div>
+    
+    <br>
+    <div>
+        <label for="introduction">introduction:</label>
+        <input id="introduction" type="text" name="introduction" max="500">
+    </div>
+
+    <br>
+
+    <button type="submit">submit</button>
+</div>
+
+
+
+</form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+body{
+    background-color: white;
+}
+.head{
+    text-align: center;
+}
+.frist>.image{
+    height: 500px;
+    width: 800px;
+    background-image:url(..//college1.jpg);
+    background-size: 100% 100%;
+}
+a{
+    margin: 100px;
+    margin-top: 300px;
+    text-decoration: none;
+    font-size: large;
+    color:blue;
+}
+.frist,.second{
+    height: 500px;
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+
+}
+.second>.image{
+    height: 500px;
+    width: 800px;
+    background-image:url(..//college2.jpg);
+    background-size: 100% 100%;
+}

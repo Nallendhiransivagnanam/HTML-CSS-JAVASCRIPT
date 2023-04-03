@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<script>
+    function ValidateForm(){
+        let x=document.forms["login"]["fname"].value;
+        let y=document.forms["login"]["EMAIL"].value;
+        let z=document.forms["login"]["MOBILE NO"].value;
+    
+        if(x=="" || y=="") {
+            alert("Enter NAME and EMAIL");
+            return false;
+        }
+        else if(z==""){
+            alert("Enter a MOBILE NO");
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+</script>
+<body>
+    <div class="head">
+        <p class="unilogo"></p>		
+        <h1 style="text-align: center;"><Big>PERIYAR UNIVERSITY-SALEM <br> பெரியார் பல்கலைக்கழகம்-சேலம். </Big></h1>
+        <p class="periyarlogo"></p>
+    </div>
+    <form name="login" action="http://127.0.0.1:5500/harisend.html" target="_blank"  onsubmit="return ValidateForm()" method="get">
+        <h2>REGISTRATION</h2>
+        <label for="fname">NAME</label> <br>
+        <input type="text" name="fname"><br>
+        <label for="EMAIL">EMAIL</label><br>
+        <input type="EMAIL" name="EMAIL" id=""><br>
+        <label for="MOBILENO"> MOBILENO</label><br>
+        <input type="MOBILENO" name="MOBILE NO"><br>
+        <button type="submit">sing in</button>
+        
+    </form>
+    
+</body>
+</html>
